@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.IntegerEditActivity"
+    android:background="#000">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_card_task"
+        android:transitionName="card.background"
+        android:id="@+id/editTodo.editInt.background"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="100sp"
+        android:text="0"
+        android:hint="0"
+        android:textColorHint="#c666"
+        android:textColor="#fff"
+        android:fontFamily="sans-serif-thin"
+        android:inputType="numberSigned"
+        android:maxLines="1"
+        android:maxLength="6"
+        android:layout_centerInParent="true"
+        style="?android:attr/textViewStyle"
+        android:background="@null"
+        android:id="@+id/editTodo.editInt.int"
+        android:transitionName="edit.int" />
+
+    <TextView
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40sp"
+        android:background="@drawable/shape_floating_button"
+        android:elevation="3sp"
+        android:clickable="true"
+        android:text="◯"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-thin"
+        android:id="@+id/editTodo.editInt.done"
+        android:gravity="center"
+        android:transitionName="edit.done"/>
+
+</RelativeLayout>

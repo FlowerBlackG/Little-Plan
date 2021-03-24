@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.About"
+    android:background="@drawable/main_background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="45sp"
+        android:textColor="#fff"
+        android:text="@string/common.login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:layout_marginTop="300sp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:maxLength="32"
+            android:hint="@string/common.username"
+            android:textColorHint="#c666"
+            android:textColor="#fff"
+            android:id="@+id/cloud.login.username" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:maxLines="1"
+            android:maxLength="32"
+            android:hint="@string/common.password"
+            android:textColorHint="#c666"
+            android:textColor="#fff"
+            android:inputType="textPassword"
+            android:id="@+id/cloud.login.password" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:layout_marginTop="2sp"
+            android:background="?android:attr/listDivider" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="@string/common.confirm"
+            android:background="?android:attr/selectableItemBackground"
+            android:id="@+id/cloud.login.submit" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="?android:attr/listDivider" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60sp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20sp"
+        android:background="@drawable/shape_floating_button"
+        android:elevation="3sp"
+        android:clickable="true"
+        android:text="◁"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-thin"
+        android:id="@+id/cloud.login.globalBackBtn"
+        android:gravity="center"
+        android:visibility="gone"/>
+</RelativeLayout>

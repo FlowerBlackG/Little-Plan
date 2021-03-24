@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <attr name="theme_color_accent" format="color" />
+    <!-- 主背景 -->
+    <attr name="theme_main_background_color" format="color" />
+    <attr name="theme_main_background_color_gradient" format="color" />
+
+    <!-- 未完成任务的背景 -->
+    <attr name="theme_card_task_background_color" format="color" />
+    <attr name="theme_card_task_background_color_gradient" format="color" />
+    <attr name="theme_card_task_background_color_click" format="color" />
+
+    <!-- 已完成任务的背景 -->
+    <attr name="theme_card_complete_background_color" format="color" />
+    <attr name="theme_card_complete_background_color_gradient" format="color" />
+    <attr name="theme_card_complete_background_color_click" format="color" />
+
+    <!-- 未完成任务中，功能按钮的背景 -->
+    <attr name="theme_card_task_button_color" format="color" />
+    <attr name="theme_card_task_button_color_click" format="color" />
+
+    <!-- 已完成任务中，功能按钮的背景 -->
+    <attr name="theme_card_complete_button_color" format="color" />
+    <attr name="theme_card_complete_button_color_click" format="color" />
+
+    <!-- 浮动按钮背景 -->
+    <attr name="theme_floating_button_color" format="color" />
+    <attr name="theme_floating_button_color_click" format="color" />
+    
+</resources>

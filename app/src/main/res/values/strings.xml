@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">小计划</string>
+    <string name="app_buildTime" translatable="false">2021.0218.2256</string>
+
+    <string name="common.warning">警告</string>
+    <string name="common.hint">提示</string>
+    <string name="common.nextStep">下一步</string>
+    <string name="common.notice">注意</string>
+    <string name="common.cancel">取消</string>
+    <string name="common.continue">继续</string>
+    <string name="common.yes">是</string>
+    <string name="common.no">否</string>
+    <string name="common.sure">确定</string>
+    <string name="common.login">登录</string>
+    <string name="common.register">注册</string>
+    <string name="common.username">用户名</string>
+    <string name="common.password">密码</string>
+    <string name="common.confirm">确认</string>
+    <string name="common.okay">好的</string>
+    <string name="common.complete">完成</string>
+    <string name="common.changePassword">修改密码</string>
+    <string name="common.oldPassword">旧密码</string>
+    <string name="common.newPassword">新密码</string>
+
+    <string name="home.tutorial.firstRun.step1.text">点击“小计划”标题区域\n解锁“云服务”、“主题”等功能</string>
+    <string name="home.tutorial.firstRun.step2.text">点击右侧按钮\n创建任务卡片</string>
+    <string name="home.tutorial.firstCard.clickToQuickFunctions">点击卡片以使用快速功能</string>
+    <string name="home.tutorial.firstCard.longClickToEdit">长按卡片以进入编辑页面</string>
+
+    <string name="home.btnRemove.longClickToRemove">长按以删除卡片</string>
+    <string name="home.btnRemove.iKnow">知道</string>
+    <string name="home.btnRemove.sureToDeleteQuest">真的要删除吗？</string>
+    <string name="home.btnRemove.sureWhatURDoing">请确保知道自己在做什么</string>
+    <string name="home.btnRemove.dontRemove">别删</string>
+
+    <string name="home.accuChange.cantMoveUpper">不能再往上啦~~</string>
+    <string name="home.accuChange.cantMoveLower">不能再往下啦~~</string>
+
+    <string name="home.checkUpdate.newVersionAvailable">有新版本可用</string>
+    <string name="home.checkUpdate.detail">说明：</string>
+    <string name="home.checkUpdate.update">更新</string>
+
+    <string name="changeTheme.selectTheme">选择主题</string>
+    <string name="changeTheme.themeName.PrimaryGradient">梦境</string>
+    <string name="changeTheme.themeName.PureBlack">简黑</string>
+    <string name="changeTheme.themeName.HumbleGreen">青葱</string>
+    <string name="changeTheme.themeName.TeenageBlue">轻云</string>
+    <string name="changeTheme.themeName.TeenagePink">柔雾</string>
+    <string name="changeTheme.themeName.SkyBlue">空境</string>
+    <string name="changeTheme.themeName.MaterialOrange">轻橙</string>
+    <string name="changeTheme.themeName.DeepDive">深潜</string>
+    <string name="changeTheme.themeName.DeepForest">丛林</string>
+
+
+    <string name="about.versionShow">版本：</string>
+    <string name="about.buildShow">编译：</string>
+    <string name="about.buildTimeShow">时间：</string>
+    <string name="about.funList.cloud">云服务</string>
+    <string name="about.funList.changeTheme">更换主题</string>
+    <string name="about.funList.removeProtect.on">误删保护：开</string>
+    <string name="about.funList.removeProtect.off">误删保护：关</string>
+    <string name="about.funList.globalFloatingBackBtn.on">浮动返回按钮：开</string>
+    <string name="about.funList.globalFloatingBackBtn.off">浮动返回按钮：关</string>
+    <string name="about.funList.clearAllData">清空数据</string>
+    <string name="about.funList.clearAllData.dialog.text">按下确认，你的数据将被清空。这个操作很危险，请确保知道自己在做什么</string>
+    <string name="about.funList.clearAllData.dialog.continueRemoving">继续清空</string>
+    <string name="about.funList.clearAllData.dialog.dataCleared">数据已清空</string>
+
+    <string name="editTodo.whyNotWriteATitle">写个标题呗~</string>
+    <string name="editTodo.hint.hereToWriteTitle">在这里设置标题</string>
+    <string name="editTodo.hint.hereToWriteLoc">在这里设置地点</string>
+    <string name="editTodo.param.completed">已完成</string>
+    <string name="editTodo.param.accuType">积累型</string>
+    <string name="editTodo.param.accuTarget">目标</string>
+    <string name="editTodo.param.accuCurrent">当前</string>
+    <string name="editTodo.param.dueDate">截止日</string>
+    <string name="editTodo.param.detail">详细</string>
+
+    <string name="editTodo.none">无</string>
+
+    <string name="editTodo.editDetail.editTextHint">在这里填写备注信息</string>
+    <string name="editTodo.editDetail.textTooLong">详情内容太长了哦~</string>
+
+    <string name="cloud.home.didntSignIn">未登录</string>
+    <string name="cloud.home.uploadData">上传数据</string>
+    <string name="cloud.home.downloadData">下载数据</string>
+    <string name="cloud.home.logout">登出账户</string>
+    <string name="cloud.home.removeAccount">移除账户</string>
+    <string name="cloud.home.uploadSuccess">上传成功</string>
+    <string name="cloud.home.uploadData.localDataEmptyWarning">本地数据为空，继续上传将清空云端数据</string>
+    <string name="cloud.home.downloadSuccess">下载成功</string>
+    <string name="cloud.home.cloudDataUpdateTimeShow">云端数据更新时间：</string>
+    <string name="cloud.home.downloadData.actionWillCoverLocalDataWarning">本操作将用云端数据覆盖本地数据</string>
+    <string name="cloud.home.downloadData.cloudDataEmptyWarning">云端数据为空。继续操作将清除本地数据</string>
+    <string name="cloud.home.removeAccount.removeWarning">这样做会将你的账户从云端移除。确定？</string>
+
+    <string name="cloud.login.PWLenShouldLargerThanSix">密码长度应大于6位</string>
+    <string name="cloud.login.tutor.registerLoginTwoInOneText">本页面同时提供注册与登录功能\n使用未注册过的用户名与密码即可自动注册</string>
+    <string name="cloud.login.dontLeaveBlankEmpty">不要有空项</string>
+    <string name="cloud.login.loginSuccess">登录成功</string>
+    <string name="cloud.login.registerSuggest">该用户未注册。是否用该用户名和密码注册新账户？</string>
+    <string name="cloud.login.registerSuccess">注册成功</string>
+    <string name="cloud.login.unknownError">未知异常</string>
+    <string name="cloud.login.wrongPW">密码错误</string>
+
+    <string name="cloud.changePW.pleaseInputOldPW">请输入旧密码</string>
+    <string name="cloud.changePW.pleaseInputNewPW">请输入新密码</string>
+    <string name="cloud.changePW.editSuccess">修改成功</string>
+    <string name="cloud.changePW.oldPWWrong">旧密码错误</string>
+</resources>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity"
+    android:background="@drawable/main_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="6"
+            android:clickable="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:id="@+id/home.titleZone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="50sp"
+                android:text="小计划"
+                android:textColor="#fff"
+                android:transitionName="app.title"
+                android:id="@+id/home.appTitle"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="34sp"
+                android:text="Little Plan"
+                android:textColor="#fff"
+                android:transitionName="app.title.eng"
+                android:id="@+id/home.appTitle.eng"/>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/home.layout"
+                android:animateLayoutChanges="true" />
+        </ScrollView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60sp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20sp"
+        android:background="@drawable/shape_floating_button"
+        android:elevation="3sp"
+        android:clickable="true"
+        android:text="+"
+        android:textColor="#fff"
+        android:textSize="60sp"
+        android:fontFamily="sans-serif-thin"
+        android:id="@+id/home.add"
+        android:gravity="center" />
+
+
+    <!-- First Run Tutorial -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="4sp"
+        android:clickable="true"
+        android:id="@+id/home.tutorial.layout"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true">
+                <TextView
+                    android:layout_width="380sp"
+                    android:layout_height="100sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="#4000"
+                    android:textColor="#fff"
+                    android:textSize="24sp"
+                    android:text="@string/home.tutorial.firstRun.step1.text"
+                    android:gravity="center" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#a000"
+                    android:elevation="6sp"
+                    android:id="@+id/home.tutorial.step1.film"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4">
+                <TextView
+                    android:layout_width="185sp"
+                    android:layout_height="100sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="50sp"
+                    android:background="#4000"
+                    android:textColor="#fff"
+                    android:textSize="24sp"
+                    android:text="@string/home.tutorial.firstRun.step2.text"
+                    android:gravity="center"
+                    android:elevation="3sp"/>
+
+                <TextView
+                    android:layout_width="80sp"
+                    android:layout_height="80sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="60sp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="20sp"
+                    android:background="@drawable/shape_floating_button"
+                    android:elevation="3sp"
+                    android:clickable="true"
+                    android:text="+"
+                    android:textColor="#fff"
+                    android:textSize="60sp"
+                    android:fontFamily="sans-serif-thin"
+                    android:gravity="center" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#a000"
+                    android:elevation="6sp"
+                    android:id="@+id/home.tutorial.step2.film.upper"/>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#a000"
+                    android:elevation="2sp"
+                    android:id="@+id/home.tutorial.step2.film.lower"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="170sp"
+            android:layout_height="75sp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shape_card_task"
+            android:text="@string/common.nextStep"
+            android:textColor="#fff"
+            android:textSize="28sp"
+            android:elevation="6sp"
+            android:id="@+id/home.tutorial.button"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

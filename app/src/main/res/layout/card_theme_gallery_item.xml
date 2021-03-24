@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="170sp"
+    android:layout_height="170sp"
+    android:layout_margin="10sp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_card_task"
+        android:layout_margin="2sp"
+        android:elevation="2sp"
+        android:id="@+id/card.galleryItem.image">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:text="梦境"
+            android:background="@drawable/shape_theme_show_item_text_background"
+            android:id="@+id/card.galleryItem.text"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_theme_show_item_background"
+        android:clickable="true"
+        android:elevation="3sp"
+        android:id="@+id/card.galleryItem.btn"/>
+
+</FrameLayout>

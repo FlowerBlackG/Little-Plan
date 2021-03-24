@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Little Plan</string>
+
+    <string name="common.warning">Warning</string>
+    <string name="common.hint">Hint</string>
+    <string name="common.nextStep">Next</string>
+    <string name="common.notice">Notice</string>
+    <string name="common.yes">Yes</string>
+    <string name="common.no">No</string>
+    <string name="common.sure">Sure</string>
+    <string name="common.login">Login</string>
+    <string name="common.register">Register</string>
+    <string name="common.username">Username</string>
+    <string name="common.password">Password</string>
+    <string name="common.confirm">Confirm</string>
+    <string name="common.okay">Okay</string>
+    <string name="common.cancel">Cancel</string>
+    <string name="common.continue">Continue</string>
+    <string name="common.complete">Complete</string>
+    <string name="common.changePassword">Change Password</string>
+    <string name="common.oldPassword">Old password</string>
+    <string name="common.newPassword">New password</string>
+
+    <string name="home.tutorial.firstRun.step2.text">Click \"+\" to create cards</string>
+    <string name="home.tutorial.firstRun.step1.text">Click around \"Little Plan\" to access features like \"Cloud\" and \"Theme\"</string>
+    <string name="home.tutorial.firstCard.clickToQuickFunctions">Click cards to access quick actions</string>
+    <string name="home.tutorial.firstCard.longClickToEdit">Press cards to edit</string>
+
+    <string name="home.btnRemove.longClickToRemove">Press longer to remove</string>
+    <string name="home.btnRemove.iKnow">Sure</string>
+    <string name="home.btnRemove.sureToDeleteQuest">Sure to remove the task?</string>
+    <string name="home.btnRemove.sureWhatURDoing">Make sure you know what you are doing</string>
+    <string name="home.btnRemove.dontRemove">Don\'t</string>
+
+    <string name="home.accuChange.cantMoveUpper">Can\'t move upper~~</string>
+    <string name="home.accuChange.cantMoveLower">Can\'t move lower~~</string>
+
+    <string name="home.checkUpdate.newVersionAvailable">New version available</string>
+    <string name="home.checkUpdate.detail">"Detail: "</string>
+    <string name="home.checkUpdate.update">Update</string>
+
+    <string name="changeTheme.selectTheme">Theme</string>
+    <string name="changeTheme.themeName.DeepForest">Jungle Journey</string>
+    <string name="changeTheme.themeName.DeepDive">Deep Dive</string>
+    <string name="changeTheme.themeName.PrimaryGradient">Sweet Dream</string>
+    <string name="changeTheme.themeName.PureBlack">Just Black</string>
+    <string name="changeTheme.themeName.HumbleGreen">Humble Green</string>
+    <string name="changeTheme.themeName.TeenageBlue">Cloud Blue</string>
+    <string name="changeTheme.themeName.TeenagePink">Cloud Pink</string>
+    <string name="changeTheme.themeName.SkyBlue">Sky Blue</string>
+    <string name="changeTheme.themeName.MaterialOrange">Dessert</string>
+
+    <string name="about.buildTimeShow">"Time: "</string>
+    <string name="about.buildShow">"Build: "</string>
+    <string name="about.versionShow">"Version: "</string>
+    <string name="about.funList.cloud">Cloud Service</string>
+    <string name="about.funList.changeTheme">Change Theme</string>
+    <string name="about.funList.removeProtect.on">Removal Protection: On</string>
+    <string name="about.funList.removeProtect.off">Removal Protection: Off</string>
+    <string name="about.funList.globalFloatingBackBtn.on">Floating Back Button: On</string>
+    <string name="about.funList.globalFloatingBackBtn.off">Floating Back Button: Off</string>
+    <string name="about.funList.clearAllData">Clear All Data</string>
+    <string name="about.funList.clearAllData.dialog.text">By tapping \"Continue\", all of your data will be removed. Make sure you know what you are doing.</string>
+    <string name="about.funList.clearAllData.dialog.continueRemoving">Continue</string>
+    <string name="about.funList.clearAllData.dialog.dataCleared">All data cleared</string>
+
+    <string name="editTodo.whyNotWriteATitle">Why not write a title?</string>
+    <string name="editTodo.hint.hereToWriteTitle">Here to write title</string>
+    <string name="editTodo.hint.hereToWriteLoc">Here to write location</string>
+    <string name="editTodo.param.completed">Completed</string>
+    <string name="editTodo.param.accuType">Accumulative</string>
+    <string name="editTodo.param.accuTarget">Target</string>
+    <string name="editTodo.param.accuCurrent">Current</string>
+    <string name="editTodo.param.dueDate">Due</string>
+    <string name="editTodo.param.detail">Detail</string>
+
+    <string name="editTodo.none">None</string>
+
+    <string name="editTodo.editDetail.editTextHint">Fill detail here...</string>
+    <string name="editTodo.editDetail.textTooLong">Content too long</string>
+
+    <string name="cloud.home.didntSignIn">Login First</string>
+    <string name="cloud.home.uploadData">Upload</string>
+    <string name="cloud.home.downloadData">Download</string>
+    <string name="cloud.home.logout">Logout</string>
+    <string name="cloud.home.removeAccount">Remove Account</string>
+    <string name="cloud.home.uploadSuccess">Upload success</string>
+    <string name="cloud.home.uploadData.localDataEmptyWarning">There\'s no data locally. Continue uploading will empty data in the cloud.</string>
+    <string name="cloud.home.downloadSuccess">Download success</string>
+    <string name="cloud.home.cloudDataUpdateTimeShow">"Cloud data update time: "</string>
+    <string name="cloud.home.downloadData.actionWillCoverLocalDataWarning">Using cloud data to cover local data?</string>
+    <string name="cloud.home.downloadData.cloudDataEmptyWarning">There\'s no data on the cloud. Keep downloading will empty your local data.</string>
+    <string name="cloud.home.removeAccount.removeWarning">It will remove your account from the cloud. Sure?</string>
+
+    <string name="cloud.login.PWLenShouldLargerThanSix">Length of the password should be larger than 6</string>
+    <string name="cloud.login.tutor.registerLoginTwoInOneText">The page can be used for both register and login. Use a username and password that has never been registered to create a new account.</string>
+    <string name="cloud.login.dontLeaveBlankEmpty">Don\'t leave anything blank</string>
+    <string name="cloud.login.loginSuccess">Login successful</string>
+    <string name="cloud.login.registerSuggest">User not registered. Do you want to register with this username and password?</string>
+    <string name="cloud.login.registerSuccess">Register successful</string>
+    <string name="cloud.login.unknownError">Unknown error</string>
+    <string name="cloud.login.wrongPW">Wrong password</string>
+
+    <string name="cloud.changePW.pleaseInputOldPW">Old password</string>
+    <string name="cloud.changePW.pleaseInputNewPW">New password</string>
+    <string name="cloud.changePW.editSuccess">Edit successful</string>
+    <string name="cloud.changePW.oldPWWrong">Wrong old password</string>
+</resources>

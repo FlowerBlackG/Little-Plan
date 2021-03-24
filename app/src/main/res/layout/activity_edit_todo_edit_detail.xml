@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.IntegerEditActivity"
+    android:background="#000">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_card_task"
+        android:transitionName="card.background"
+        android:id="@+id/editTodo.editDetail.background"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="430sp"
+        android:background="@drawable/shape_apparent_white_four_radius"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32sp"
+        android:layout_marginLeft="32sp"
+        android:layout_marginRight="32sp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="18sp"
+            android:layout_marginRight="18sp">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="18sp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:hint="@string/editTodo.editDetail.editTextHint"
+                android:textColorHint="#6fff"
+                android:textColor="#fff"
+                android:fontFamily="sans-serif-thin"
+                android:maxLength="16384"
+                style="?android:attr/textViewStyle"
+                android:background="@null"
+                android:id="@+id/editTodo.editDetail.text" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="482sp"
+        android:textSize="24sp"
+        android:textColor="#fff"
+        android:text="2048 / 2048"
+        android:gravity="center"
+        android:id="@+id/editTodo.editDetail.count"/>
+
+
+    <TextView
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40sp"
+        android:background="@drawable/shape_floating_button"
+        android:elevation="3sp"
+        android:clickable="true"
+        android:text="◯"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-thin"
+        android:id="@+id/editTodo.editDetail.done"
+        android:gravity="center"
+        android:transitionName="edit.done"/>
+
+</RelativeLayout>

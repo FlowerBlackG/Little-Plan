@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.About"
+    android:background="@drawable/main_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:clickable="true"
+            android:background="?android:attr/selectableItemBackground">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="32sp"
+                    android:text="@string/cloud.home.didntSignIn"
+                    android:textColor="#fff"
+                    android:maxLines="1"
+                    android:maxEms="10"
+                    android:ellipsize="end"
+                    android:id="@+id/cloud.home.username"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="2021.02.13-13:23"
+                    android:textColor="#fff"
+                    android:transitionName="app.title.eng"
+                    android:id="@+id/cloud.home.dataDate"
+                    android:layout_marginTop="12sp"
+                    android:visibility="invisible"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:animateLayoutChanges="true">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:layout_alignParentBottom="true"
+                    android:background="?android:attr/listDivider" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="52sp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:id="@+id/cloud.home.upload"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:textColor="#fff"
+                        android:textSize="16sp"
+                        android:text="@string/cloud.home.uploadData"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1sp"
+                        android:layout_alignParentBottom="true"
+                        android:background="?android:attr/listDivider" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="52sp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:id="@+id/cloud.home.download"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:textColor="#fff"
+                        android:textSize="16sp"
+                        android:text="@string/cloud.home.downloadData" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1sp"
+                        android:layout_alignParentBottom="true"
+                        android:background="?android:attr/listDivider" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="52sp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:id="@+id/cloud.home.changePW"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:textColor="#fff"
+                        android:textSize="16sp"
+                        android:text="@string/common.changePassword" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1sp"
+                        android:layout_alignParentBottom="true"
+                        android:background="?android:attr/listDivider" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="52sp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:id="@+id/cloud.home.logout"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:textColor="#fff"
+                        android:textSize="16sp"
+                        android:text="@string/cloud.home.logout" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1sp"
+                        android:layout_alignParentBottom="true"
+                        android:background="?android:attr/listDivider" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="52sp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:id="@+id/cloud.home.removeAccount"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:textColor="#fff"
+                        android:textSize="16sp"
+                        android:text="@string/cloud.home.removeAccount" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1sp"
+                        android:layout_alignParentBottom="true"
+                        android:background="?android:attr/listDivider" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="52sp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:id="@+id/cloud.home.login"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:textColor="#fff"
+                        android:textSize="16sp"
+                        android:text="@string/common.login" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1sp"
+                        android:layout_alignParentBottom="true"
+                        android:background="?android:attr/listDivider" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60sp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20sp"
+        android:background="@drawable/shape_floating_button"
+        android:elevation="3sp"
+        android:clickable="true"
+        android:text="◁"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-thin"
+        android:id="@+id/cloud.home.globalBackBtn"
+        android:gravity="center"
+        android:visibility="gone"/>
+</RelativeLayout>

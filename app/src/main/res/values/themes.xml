@@ -1,0 +1,296 @@
+<resources>
+
+    <style name="Theme.LittlePlan.Main" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">?attr/theme_color_accent</item>
+        <item name="colorPrimaryDark">?attr/theme_color_accent</item>
+        <item name="colorOnPrimary">?attr/theme_color_accent</item>
+        <item name="colorAccent">?attr/theme_color_accent</item>
+
+        <item name="windowNoTitle">true</item>
+
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="Theme.LittlePlan.PrimaryGradient" parent="Theme.LittlePlan.Main">
+        <!-- ###主题配色表### -->
+
+        <item name="theme_color_accent">#DA6594</item>
+        <!-- 主背景 -->
+        <item name="theme_main_background_color">#a6c0fe</item>
+        <item name="theme_main_background_color_gradient">#f68084</item>
+
+        <!-- 未完成任务的背景 -->
+        <item name="theme_card_task_background_color">#e0c3fc</item>
+        <item name="theme_card_task_background_color_gradient">#8ec5fc</item>
+        <item name="theme_card_task_background_color_click">#03A9F4</item>
+
+        <!-- 已完成任务的背景 -->
+        <item name="theme_card_complete_background_color">#fccb90</item>
+        <item name="theme_card_complete_background_color_gradient">#d57eeb</item>
+        <item name="theme_card_complete_background_color_click">#FFC107</item>
+
+        <!-- 未完成任务中，功能按钮的背景 -->
+        <item name="theme_card_task_button_color">#b7c4fc</item>
+        <item name="theme_card_task_button_color_click">#1E88E5</item>
+
+        <!-- 已完成任务中，功能按钮的背景 -->
+        <item name="theme_card_complete_button_color">#e8a4bd</item>
+        <item name="theme_card_complete_button_color_click">#CD7998</item>
+
+        <!-- 浮动按钮背景 -->
+        <item name="theme_floating_button_color">#f68084</item>
+        <item name="theme_floating_button_color_click">#f44336</item>
+    </style>
+
+    <style name="Theme.LittlePlan.SkyBlue" parent="Theme.LittlePlan.Main">
+        <!-- ###主题配色表### -->
+
+        <item name="theme_color_accent">#00BCD4</item>
+        <!-- 主背景 -->
+        <item name="theme_main_background_color">#80deea</item>
+        <item name="theme_main_background_color_gradient">#80deea</item>
+
+        <!-- 未完成任务的背景 -->
+        <item name="theme_card_task_background_color">#4BD2E4</item>
+        <item name="theme_card_task_background_color_gradient">#4BD2E4</item>
+        <item name="theme_card_task_background_color_click">#4EA2AE</item>
+
+        <!-- 已完成任务的背景 -->
+        <item name="theme_card_complete_background_color">#7bd8e4</item>
+        <item name="theme_card_complete_background_color_gradient">#7bd8e4</item>
+        <item name="theme_card_complete_background_color_click">#6CC9D5</item>
+
+        <!-- 未完成任务中，功能按钮的背景 -->
+        <item name="theme_card_task_button_color">#42C8DA</item>
+        <item name="theme_card_task_button_color_click">#36B8CA</item>
+
+        <!-- 已完成任务中，功能按钮的背景 -->
+        <item name="theme_card_complete_button_color">#49D0E1</item>
+        <item name="theme_card_complete_button_color_click">#3BBBCC</item>
+
+        <!-- 浮动按钮背景 -->
+        <item name="theme_floating_button_color">#3DC0D1</item>
+        <item name="theme_floating_button_color_click">#29A9BA</item>
+    </style>
+
+    <style name="Theme.LittlePlan.HumbleGreen" parent="Theme.LittlePlan.Main">
+        <!-- ###主题配色表### -->
+
+        <item name="theme_color_accent">#4CAF50</item>
+        <!-- 主背景 -->
+        <item name="theme_main_background_color">#A9D18E</item>
+        <item name="theme_main_background_color_gradient">#A9D18E</item>
+
+        <!-- 未完成任务的背景 -->
+        <item name="theme_card_task_background_color">#8FBF6E</item>
+        <item name="theme_card_task_background_color_gradient">#8FBF6E</item>
+        <item name="theme_card_task_background_color_click">#72A152</item>
+
+        <!-- 已完成任务的背景 -->
+        <item name="theme_card_complete_background_color">#A0CC82</item>
+        <item name="theme_card_complete_background_color_gradient">#A0CC82</item>
+        <item name="theme_card_complete_background_color_click">#93BF74</item>
+
+        <!-- 未完成任务中，功能按钮的背景 -->
+        <item name="theme_card_task_button_color">#8DBF6B</item>
+        <item name="theme_card_task_button_color_click">#77A656</item>
+
+        <!-- 已完成任务中，功能按钮的背景 -->
+        <item name="theme_card_complete_button_color">#8DBF6B</item>
+        <item name="theme_card_complete_button_color_click">#77A656</item>
+
+        <!-- 浮动按钮背景 -->
+        <item name="theme_floating_button_color">#85B664</item>
+        <item name="theme_floating_button_color_click">#6D9A4D</item>
+    </style>
+
+    <style name="Theme.LittlePlan.TeenagePink" parent="Theme.LittlePlan.Main">
+        <!-- ###主题配色表### -->
+
+        <item name="theme_color_accent">#B270C3</item>
+        <!-- 主背景 -->
+        <item name="theme_main_background_color">#D5ADDF</item>
+        <item name="theme_main_background_color_gradient">#D5ADDF</item>
+
+        <!-- 未完成任务的背景 -->
+        <item name="theme_card_task_background_color">#D382E8</item>
+        <item name="theme_card_task_background_color_gradient">#D382E8</item>
+        <item name="theme_card_task_background_color_click">#A876B3</item>
+
+        <!-- 已完成任务的背景 -->
+        <item name="theme_card_complete_background_color">#CE9FD9</item>
+        <item name="theme_card_complete_background_color_gradient">#CE9FD9</item>
+        <item name="theme_card_complete_background_color_click">#BD8CC8</item>
+
+        <!-- 未完成任务中，功能按钮的背景 -->
+        <item name="theme_card_task_button_color">#C472DA</item>
+        <item name="theme_card_task_button_color_click">#AD60C1</item>
+
+        <!-- 已完成任务中，功能按钮的背景 -->
+        <item name="theme_card_complete_button_color">#C691D3</item>
+        <item name="theme_card_complete_button_color_click">#B37AC1</item>
+
+        <!-- 浮动按钮背景 -->
+        <item name="theme_floating_button_color">#CB68E4</item>
+        <item name="theme_floating_button_color_click">#9660A3</item>
+    </style>
+
+    <style name="Theme.LittlePlan.PureBlack" parent="Theme.LittlePlan.Main">
+        <!-- ###主题配色表### -->
+
+        <item name="theme_color_accent">#888</item>
+        <!-- 主背景 -->
+        <item name="theme_main_background_color">#000</item>
+        <item name="theme_main_background_color_gradient">#000</item>
+
+        <!-- 未完成任务的背景 -->
+        <item name="theme_card_task_background_color">#262626</item>
+        <item name="theme_card_task_background_color_gradient">#262626</item>
+        <item name="theme_card_task_background_color_click">#333</item>
+
+        <!-- 已完成任务的背景 -->
+        <item name="theme_card_complete_background_color">#151515</item>
+        <item name="theme_card_complete_background_color_gradient">#151515</item>
+        <item name="theme_card_complete_background_color_click">#222</item>
+
+        <!-- 未完成任务中，功能按钮的背景 -->
+        <item name="theme_card_task_button_color">#343434</item>
+        <item name="theme_card_task_button_color_click">#444</item>
+
+        <!-- 已完成任务中，功能按钮的背景 -->
+        <item name="theme_card_complete_button_color">#212121</item>
+        <item name="theme_card_complete_button_color_click">#313131</item>
+
+        <!-- 浮动按钮背景 -->
+        <item name="theme_floating_button_color">#353535</item>
+        <item name="theme_floating_button_color_click">#414141</item>
+    </style>
+
+    <style name="Theme.LittlePlan.TeenageBlue" parent="Theme.LittlePlan.Main">
+        <!-- ###主题配色表### -->
+
+        <item name="theme_color_accent">#03A9F4</item>
+        <!-- 主背景 -->
+        <item name="theme_main_background_color">#BDDBF8</item>
+        <item name="theme_main_background_color_gradient">#BDDBF8</item>
+
+        <!-- 未完成任务的背景 -->
+        <item name="theme_card_task_background_color">#84C0FA</item>
+        <item name="theme_card_task_background_color_gradient">#84C0FA</item>
+        <item name="theme_card_task_background_color_click">#98BEE3</item>
+
+        <!-- 已完成任务的背景 -->
+        <item name="theme_card_complete_background_color">#ABD1F5</item>
+        <item name="theme_card_complete_background_color_gradient">#ABD1F5</item>
+        <item name="theme_card_complete_background_color_click">#98BEE3</item>
+
+        <!-- 未完成任务中，功能按钮的背景 -->
+        <item name="theme_card_task_button_color">#8DBCF8</item>
+        <item name="theme_card_task_button_color_click">#7BA8E1</item>
+
+        <!-- 已完成任务中，功能按钮的背景 -->
+        <item name="theme_card_complete_button_color">#8DBCF8</item>
+        <item name="theme_card_complete_button_color_click">#7BA8E1</item>
+
+        <!-- 浮动按钮背景 -->
+        <item name="theme_floating_button_color">#8DBCF8</item>
+        <item name="theme_floating_button_color_click">#7BA8E1</item>
+    </style>
+
+    <style name="Theme.LittlePlan.MaterialOrange" parent="Theme.LittlePlan.Main">
+        <!-- ###主题配色表### -->
+
+        <item name="theme_color_accent">#FF5722</item>
+        <!-- 主背景 -->
+        <item name="theme_main_background_color">#FF8A65</item>
+        <item name="theme_main_background_color_gradient">#FF8A65</item>
+
+        <!-- 未完成任务的背景 -->
+        <item name="theme_card_task_background_color">#FF6E40</item>
+        <item name="theme_card_task_background_color_gradient">#FF6E40</item>
+        <item name="theme_card_task_background_color_click">#D55229</item>
+
+        <!-- 已完成任务的背景 -->
+        <item name="theme_card_complete_background_color">#FF9E80</item>
+        <item name="theme_card_complete_background_color_gradient">#FF9E80</item>
+        <item name="theme_card_complete_background_color_click">#DC795A</item>
+
+        <!-- 未完成任务中，功能按钮的背景 -->
+        <item name="theme_card_task_button_color">#F85E2D</item>
+        <item name="theme_card_task_button_color_click">#C85B39</item>
+
+        <!-- 已完成任务中，功能按钮的背景 -->
+        <item name="theme_card_complete_button_color">#F48462</item>
+        <item name="theme_card_complete_button_color_click">#DD6D4B</item>
+
+        <!-- 浮动按钮背景 -->
+        <item name="theme_floating_button_color">#F4511E</item>
+        <item name="theme_floating_button_color_click">#DC4313</item>
+    </style>
+
+    <style name="Theme.LittlePlan.DeepDive" parent="Theme.LittlePlan.Main">
+        <!-- ###主题配色表### -->
+
+        <item name="theme_color_accent">#0D47A1</item>
+        <!-- 主背景 -->
+        <item name="theme_main_background_color">#1A237E</item>
+        <item name="theme_main_background_color_gradient">#1A237E</item>
+
+        <!-- 未完成任务的背景 -->
+        <item name="theme_card_task_background_color">#1565C0</item>
+        <item name="theme_card_task_background_color_gradient">#1565C0</item>
+        <item name="theme_card_task_background_color_click">#2378D8</item>
+
+        <!-- 已完成任务的背景 -->
+        <item name="theme_card_complete_background_color">#283593</item>
+        <item name="theme_card_complete_background_color_gradient">#283593</item>
+        <item name="theme_card_complete_background_color_click">#3745AC</item>
+
+        <!-- 未完成任务中，功能按钮的背景 -->
+        <item name="theme_card_task_button_color">#1979E6</item>
+        <item name="theme_card_task_button_color_click">#2A8BF8</item>
+
+        <!-- 已完成任务中，功能按钮的背景 -->
+        <item name="theme_card_complete_button_color">#3344BC</item>
+        <item name="theme_card_complete_button_color_click">#4355D6</item>
+
+        <!-- 浮动按钮背景 -->
+        <item name="theme_floating_button_color">#1976D2</item>
+        <item name="theme_floating_button_color_click">#2385E6</item>
+    </style>
+
+    <style name="Theme.LittlePlan.DeepForest" parent="Theme.LittlePlan.Main">
+        <!-- ###主题配色表### -->
+
+        <item name="theme_color_accent">#009688</item>
+        <!-- 主背景 -->
+        <item name="theme_main_background_color">#004D40</item>
+        <item name="theme_main_background_color_gradient">#004D40</item>
+
+        <!-- 未完成任务的背景 -->
+        <item name="theme_card_task_background_color">#00897B</item>
+        <item name="theme_card_task_background_color_gradient">#00897B</item>
+        <item name="theme_card_task_background_color_click">#09B1A0</item>
+
+        <!-- 已完成任务的背景 -->
+        <item name="theme_card_complete_background_color">#00695C</item>
+        <item name="theme_card_complete_background_color_gradient">#00695C</item>
+        <item name="theme_card_complete_background_color_click">#067C6D</item>
+
+        <!-- 未完成任务中，功能按钮的背景 -->
+        <item name="theme_card_task_button_color">#00BFA5</item>
+        <item name="theme_card_task_button_color_click">#2CD6BF</item>
+
+        <!-- 已完成任务中，功能按钮的背景 -->
+        <item name="theme_card_complete_button_color">#00BFA5</item>
+        <item name="theme_card_complete_button_color_click">#2CD6BF</item>
+
+        <!-- 浮动按钮背景 -->
+        <item name="theme_floating_button_color">#26A69A</item>
+        <item name="theme_floating_button_color_click">#3AC6B9</item>
+    </style>
+
+</resources>

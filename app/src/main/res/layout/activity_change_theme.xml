@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.About"
+    android:background="@drawable/main_background"
+    android:id="@+id/changeTheme.background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="45sp"
+        android:textColor="#fff"
+        android:text="@string/changeTheme.selectTheme"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="105sp" />
+
+    <ScrollView
+        android:layout_width="380sp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220sp"
+        android:layout_marginBottom="26sp"
+        android:id="@+id/changeTheme.scrollView">
+    </ScrollView>
+
+    <TextView
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60sp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20sp"
+        android:background="@drawable/shape_floating_button"
+        android:elevation="3sp"
+        android:clickable="true"
+        android:text="◁"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-thin"
+        android:id="@+id/changeTheme.globalBackBtn"
+        android:gravity="center"
+        android:visibility="gone"/>
+</RelativeLayout>

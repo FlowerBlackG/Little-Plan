@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".activity.EditTodoActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_card_task"
+        android:transitionName="card.background"
+        android:id="@+id/editTodo.background"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="6">
+            <EditText
+                android:layout_width="300sp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textSize="36sp"
+                android:hint="@string/editTodo.hint.hereToWriteTitle"
+                android:textColor="#fff"
+                android:maxLength="256"
+                android:id="@+id/editTodo.title"
+                android:transitionName="card.title"
+                style="?android:attr/textViewStyle"
+                android:background="@null"/>
+            <EditText
+                android:layout_width="260sp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTodo.title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16sp"
+                android:gravity="center"
+                android:textSize="26sp"
+                android:hint="@string/editTodo.hint.hereToWriteLoc"
+                android:textColor="#fff"
+                android:maxLength="256"
+                android:id="@+id/editTodo.loc"
+                style="?android:attr/textViewStyle"
+                android:background="@null"
+                android:transitionName="card.loc"/>
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="60sp"
+            android:layout_weight="4">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:animateLayoutChanges="true">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:background="?android:attr/listDivider" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100sp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:id="@+id/editTodo.isComplete">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20sp"
+                        android:textSize="30sp"
+                        android:text="@string/editTodo.param.completed"
+                        android:textColor="#fff" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20sp"
+                        android:textSize="30sp"
+                        android:text="@string/common.no"
+                        android:textColor="#fff"
+                        android:id="@+id/editTodo.isComplete.text"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:background="?android:attr/listDivider" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100sp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:id="@+id/editTodo.isAccumulate">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20sp"
+                        android:textSize="30sp"
+                        android:text="@string/editTodo.param.accuType"
+                        android:textColor="#fff" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20sp"
+                        android:textSize="30sp"
+                        android:text="@string/common.yes"
+                        android:textColor="#fff"
+                        android:id="@+id/editTodo.isAccumulate.text"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:background="?android:attr/listDivider" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100sp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:id="@+id/editTodo.target">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20sp"
+                        android:textSize="30sp"
+                        android:text="@string/editTodo.param.accuTarget"
+                        android:textColor="#fff" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20sp"
+                        android:textSize="30sp"
+                        android:text="30"
+                        android:textColor="#fff"
+                        android:id="@+id/editTodo.target.text"
+                        android:transitionName="edit.int"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1sp"
+                        android:background="?android:attr/listDivider"
+                        android:layout_alignParentBottom="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100sp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:id="@+id/editTodo.current">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20sp"
+                        android:textSize="30sp"
+                        android:text="@string/editTodo.param.accuCurrent"
+                        android:textColor="#fff" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20sp"
+                        android:textSize="30sp"
+                        android:text="0"
+                        android:textColor="#fff"
+                        android:id="@+id/editTodo.current.text"
+                        android:transitionName="edit.int"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1sp"
+                        android:background="?android:attr/listDivider"
+                        android:layout_alignParentBottom="true"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100sp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:id="@+id/editTodo.dueDate">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20sp"
+                        android:textSize="30sp"
+                        android:text="@string/editTodo.param.dueDate"
+                        android:textColor="#fff" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20sp"
+                        android:textSize="25sp"
+                        android:text="2025.12.31-23:59"
+                        android:textColor="#fff"
+                        android:id="@+id/editTodo.dueDate.text"
+                        android:transitionName="card.dueDate"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1sp"
+                        android:background="?android:attr/listDivider"
+                        android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100sp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:id="@+id/editTodo.detail">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20sp"
+                        android:textSize="30sp"
+                        android:text="@string/editTodo.param.detail"
+                        android:textColor="#fff" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20sp"
+                        android:textSize="18sp"
+                        android:text="@string/editTodo.none"
+                        android:textColor="#fff"
+                        android:maxLines="3"
+                        android:maxEms="10"
+                        android:ellipsize="end"
+                        android:id="@+id/editTodo.detail.text" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:background="?android:attr/listDivider" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="80sp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60sp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20sp"
+        android:background="@drawable/shape_floating_button"
+        android:elevation="3sp"
+        android:clickable="true"
+        android:text="◯"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-thin"
+        android:id="@+id/editTodo.float.positive"
+        android:gravity="center"
+        android:transitionName="edit.done"/>
+
+    <TextView
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60sp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20sp"
+        android:background="@drawable/shape_floating_button"
+        android:elevation="3sp"
+        android:clickable="true"
+        android:text="×"
+        android:textColor="#fff"
+        android:textSize="40sp"
+        android:fontFamily="sans-serif-thin"
+        android:id="@+id/editTodo.float.negative"
+        android:gravity="center" />
+
+</RelativeLayout>
